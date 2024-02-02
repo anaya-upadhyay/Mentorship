@@ -11,7 +11,7 @@ public class PrimaryContext(DbContextOptions<PrimaryContext> options) : DbContex
 
         modelBuilder.Entity<BankAccount>(b =>
         {
-            b.HasKey(p => p.id);
+            b.HasKey(p => p.Id);
         });
     }
 }
