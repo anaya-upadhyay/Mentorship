@@ -1,8 +1,6 @@
-﻿using System.Xml.Linq;
+﻿namespace PrimaryConstructor;
 
-namespace PrimaryConstructor;
-
-public record BankAccount(Guid id, string AccountNumber, string AccountHolder)
+public record BankAccount(Guid Id, string AccountNumber, string AccountHolder)
 {
     public override string ToString() => $"{AccountHolder} ({AccountNumber})";
 }
